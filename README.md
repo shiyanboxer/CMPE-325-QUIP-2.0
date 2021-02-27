@@ -1,1 +1,1 @@
-# CMPE-325-QUIP-2.0
+# CMPE 325 Project - QUIP 2.0
