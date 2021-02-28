@@ -48,10 +48,11 @@ def display():
     """
     return jsonify(jobs)
 
-@app.route('/filter', methods = [''])
-def filter(filter1, filter2, filter3, filter4):
-    if (filter1 in jobs):
-        filtered_jobs = filtered_jobs.append(jobs[0].filter1)
+@app.route('/filter', methods = ['POST'])
+def filtered(filter_1, filter_2, filter_3, filter_4):
+    if ("Banking" in jobs):
+        filtered_jobs = filtered_jobs.append(jobs[0].Banking)
+
     return jsonify(filtered_jobs) 
 
 
