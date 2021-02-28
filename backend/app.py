@@ -67,4 +67,16 @@ def sort():
         sortedJobs = sorted(jobs, key=lambda item: item.get(param))
     return jsonify(sortedJobs)
 
+@app.route('/search', methods=['GET'])
+def search():
+    keyword = request.args.get('keyword')
+    searchJobs = []
+    for job in jobs:
+        for i in job.values():
+            if isinstance(i, str):
+                if i.find(keyword) >= 0:
+                    searchJobs.append(job)
+                    pass
+    return jsonify(searchJobs)
+
 app.run()
