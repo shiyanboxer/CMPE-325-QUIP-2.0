@@ -23,7 +23,7 @@ jobs = [{
     'industry': 'Banking',
     'location': 'Toronto',
     'employer': 'TD Bank',
-    'salary': '80000', 
+    'salary': '80000',
     'length': '12 month',
     'skills': 'JavaScript, Python',
     'remote_office': 'Remote'},
@@ -48,8 +48,12 @@ def display():
     """
     return jsonify(jobs)
 
-@app.route('/filter', methods = ['GET'])
-def filtered(filter_1_value, filter_2_value, filter_3_value, filter_4_value):
+@app.route('/filter', methods = ['POST'])
+def filtered(filter_1_value = None, filter_2_value = None, filter_3_value = None, filter_4_value = None):
+    """
+    filter by values, can have up to 4 filters
+    return filtered list of jobs
+    """
     filtered_jobs = [job for job in jobs if filter_1_value in job.values() or filter_2_value in job.values() or filter_3_value in job.values() or filter_4_value in job.values()]
     return jsonify(filtered_jobs)
 
@@ -62,34 +66,5 @@ def sort():
     else:
         sortedJobs = sorted(jobs, key=lambda item: item.get(param))
     return jsonify(sortedJobs)
-
-
-# @app.route('/api/v1/resources/books/all', methods=['GET'])
-# def api_all():
-#     return jsonify(books)
-
-
-# @app.route('/api/v1/resources/books', methods=['GET'])
-# def api_id():
-#     # Check if an ID was provided as part of the URL.
-#     # If ID is provided, assign it to a variable.
-#     # If no ID is provided, display an error in the browser.
-#     if 'id' in request.args:
-#         id = int(request.args['id'])
-#     else:
-#         return "Error: No id field provided. Please specify an id."
-
-#     # Create an empty list for our results
-#     results = []
-
-#     # Loop through the data and match results that fit the requested ID.
-#     # IDs are unique, but other fields might return many results
-#     for book in books:
-#         if book['id'] == id:
-#             results.append(book)
-
-#     # Use the jsonify function from Flask to convert our list of
-#     # Python dictionaries to the JSON format.
-#     return jsonify(results)
 
 app.run()
