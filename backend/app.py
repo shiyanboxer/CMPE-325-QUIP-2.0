@@ -50,7 +50,7 @@ def display():
 
 @app.route('/filter', methods = ['GET'])
 def filtered(filter_1_value, filter_2_value, filter_3_value, filter_4_value):
-    filtered_jobs = [job for job in jobs if filter_1_value in job.values()]
+    filtered_jobs = [job for job in jobs if filter_1_value in job.values() or filter_2_value in job.values() or filter_3_value in job.values() or filter_4_value in job.values()]
     return jsonify(filtered_jobs)
 
 @app.route('/sort', methods=['GET'])
