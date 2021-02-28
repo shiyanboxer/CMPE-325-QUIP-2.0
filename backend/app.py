@@ -9,7 +9,7 @@ jobs = [{
     'id': 0,
     'program': 'Engineering',
     'experience': '1 year',
-    'industry': 'Banking',
+    'industry': 'Consulting',
     'location': 'Toronto',
     'Employer': 'TD Bank',
     'salary': '60000', 
@@ -23,13 +23,13 @@ jobs = [{
     'industry': 'Banking',
     'location': 'Toronto',
     'Employer': 'TD Bank',
-    'salary': '60000', 
+    'salary': '80000', 
     'length': '12 month',
     'skills': 'JavaScript, Python',
     'remote_office': 'Remote'},
     {
     'id': 2,
-    'program': 'Engineering',
+    'program': 'Business',
     'experience': '1 year',
     'industry': 'Banking',
     'location': 'Toronto',
@@ -54,6 +54,16 @@ def filtered(filter_1, filter_2, filter_3, filter_4):
         filtered_jobs = filtered_jobs.append(jobs[0].Banking)
 
     return jsonify(filtered_jobs) 
+
+@app.route('/sort', methods=['GET'])
+def sort():
+    param = request.args.get('param')
+    reverse = request.args.get('reverse')
+    if reverse == 'True':
+        sortedJobs = sorted(jobs, key=lambda item: item.get(param), reverse=True)
+    else:
+        sortedJobs = sorted(jobs, key=lambda item: item.get(param))
+    return jsonify(sortedJobs)
 
 
 # @app.route('/api/v1/resources/books/all', methods=['GET'])
