@@ -5,22 +5,40 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 # Create some test data for our catalog in the form of a list of dictionaries.
-books = [
-    {'id': 0,
-     'title': 'A Fire Upon the Deep',
-     'author': 'Vernor Vinge',
-     'first_sentence': 'The coldsleep itself was dreamless.',
-     'year_published': '1992'},
-    {'id': 1,
-     'title': 'The Ones Who Walk Away From Omelas',
-     'author': 'Ursula K. Le Guin',
-     'first_sentence': 'With a clamor of bells that set the swallows soaring, the Festival of Summer came to the city Omelas, bright-towered by the sea.',
-     'published': '1973'},
-    {'id': 2,
-     'title': 'Dhalgren',
-     'author': 'Samuel R. Delany',
-     'first_sentence': 'to wound the autumnal city.',
-     'published': '1975'}
+jobs = [{
+    'id': 0,
+    'program': 'Engineering',
+    'experience': '1 year',
+    'industry': 'Banking',
+    'location': 'Toronto',
+    'Employer': 'TD Bank',
+    'salary': '60000', 
+    'length': '12 month',
+    'skills': 'JavaScript, Python',
+    'remote_office': 'Remote'},
+    {
+    'id': 1,
+    'program': 'Engineering',
+    'experience': '1 year',
+    'industry': 'Banking',
+    'location': 'Toronto',
+    'Employer': 'TD Bank',
+    'salary': '60000', 
+    'length': '12 month',
+    'skills': 'JavaScript, Python',
+    'remote_office': 'Remote'},
+
+    {
+    'id': 2,
+    'program': 'Engineering',
+    'experience': '1 year',
+    'industry': 'Banking',
+    'location': 'Toronto',
+    'Employer': 'TD Bank',
+    'salary': '60000', 
+    'length': '12 month',
+    'skills': 'JavaScript, Python',
+    'remote_office': 'Remote'},
 ]
 
 
