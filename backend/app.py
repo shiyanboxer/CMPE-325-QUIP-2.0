@@ -11,7 +11,7 @@ jobs = [{
     'experience': '1 year',
     'industry': 'Consulting',
     'location': 'Toronto',
-    'Employer': 'TD Bank',
+    'employer': 'TD Bank',
     'salary': '60000', 
     'length': '12 month',
     'skills': 'JavaScript, Python',
@@ -22,7 +22,7 @@ jobs = [{
     'experience': '1 year',
     'industry': 'Banking',
     'location': 'Toronto',
-    'Employer': 'TD Bank',
+    'employer': 'TD Bank',
     'salary': '80000', 
     'length': '12 month',
     'skills': 'JavaScript, Python',
@@ -33,7 +33,7 @@ jobs = [{
     'experience': '1 year',
     'industry': 'Banking',
     'location': 'Toronto',
-    'Employer': 'TD Bank',
+    'employer': 'TD Bank',
     'salary': '60000', 
     'length': '12 month',
     'skills': 'JavaScript, Python',
@@ -48,11 +48,10 @@ def display():
     """
     return jsonify(jobs)
 
-@app.route('/filter', methods = [''])
-def filter(filter1, filter2, filter3, filter4):
-    if (filter1 in jobs):
-        filtered_jobs = filtered_jobs.append(jobs[0].filter1)
-    return jsonify(filtered_jobs) 
+@app.route('/filter', methods = ['GET'])
+def filtered(filter_1_value, filter_2_value, filter_3_value, filter_4_value):
+    filtered_jobs = [job for job in jobs if filter_1_value in job.values() or filter_2_value in job.values() or filter_3_value in job.values() or filter_4_value in job.values()]
+    return jsonify(filtered_jobs)
 
 @app.route('/sort', methods=['GET'])
 def sort():
