@@ -7,37 +7,70 @@ app.config["DEBUG"] = True
 # Create some test data for our catalog in the form of a list of dictionaries.
 jobs = [{
     'id': 0,
-    'program': 'Engineering',
-    'experience': '1 year',
-    'industry': 'Consulting',
+    'program': 'Computer Science',
+    'job_title': 'Software Engineer Intern',
+    'industry': 'Banking',
     'location': 'Toronto',
     'employer': 'TD Bank',
-    'salary': '60000', 
+    'salary': '60000',
     'length': '12 month',
-    'skills': 'JavaScript, Python',
-    'remote_office': 'Remote'},
+    'skills': 'JavaScript, Python, React',
+    'remote_office': 'Office'},
     {
     'id': 1,
     'program': 'Engineering',
-    'experience': '1 year',
+    'job_title': 'Software Engineer Intern',
     'industry': 'Banking',
-    'location': 'Toronto',
-    'employer': 'TD Bank',
+    'location': 'Ottawa',
+    'employer': 'RBC',
     'salary': '80000',
     'length': '12 month',
-    'skills': 'JavaScript, Python',
+    'skills': 'JavaScript, Flask, Docker',
     'remote_office': 'Remote'},
     {
     'id': 2,
-    'program': 'Business',
-    'experience': '1 year',
-    'industry': 'Banking',
-    'location': 'Toronto',
-    'employer': 'TD Bank',
-    'salary': '60000', 
-    'length': '12 month',
-    'skills': 'JavaScript, Python',
+    'program': 'Engineering' ,
+    'job_title': 'Software Engineer Intern',
+    'industry': 'Payments',
+    'location': 'Vancouver',
+    'employer': 'Wealthsimple',
+    'salary': '70000', 
+    'length': '8 month',
+    'skills': 'Python, C, Java',
     'remote_office': 'Remote'},
+    {
+    'id': 3,
+    'program': 'Computer Science',
+    'job_title': 'Technical Consulting Intern',
+    'industry': 'Consulting',
+    'location': 'Ottawa',
+    'employer': 'Deloitte',
+    'salary': '55000', 
+    'length': '12 month',
+    'skills': 'Excel, PowerPoint',
+    'remote_office': 'Office'},
+    {
+    'id': 4,
+    'program': 'Business',
+    'job_title': 'Marketing Intern',
+    'industry': 'Marketing',
+    'location': 'Toronto',
+    'employer': 'Facebook',
+    'salary': '50000', 
+    'length': '12 month',
+    'skills': 'Power Point, Graphic Design',
+    'remote_office': 'Office'},
+    {
+    'id': 5,
+    'program': 'Engineering',
+    'job_title': 'Civil Engineer Intern',
+    'industry': 'Oil and Gas',
+    'location': 'Toronto',
+    'employer': 'TC Energy',
+    'salary': '70000', 
+    'length': '12 month',
+    'skills': 'Excel, CAD',
+    'remote_office': 'Office'},
 ]
 
 
@@ -67,7 +100,7 @@ def sort():
         sortedJobs = sorted(jobs, key=lambda item: item.get(param))
     return jsonify(sortedJobs)
 
-@app.route('/search', methods=['GET'])
+@app.route('/search', methods=['POST'])
 def search():
     keyword = request.args.get('keyword')
     searchJobs = []
