@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import React from "react"
+// import axios from "axios";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        {/* <NavBar/> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
