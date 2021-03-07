@@ -507,8 +507,8 @@ export default function Home() {
   return (
     <MDBDataTableV5
       hover
-      entriesOptions={[5, 20, 25]}
-      entries={5}
+      entriesOptions={[10, 25, 50]}
+      entries={10}
       pagesAmount={4}
       data={datatable}
       pagingTop
