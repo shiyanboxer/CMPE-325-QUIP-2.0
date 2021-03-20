@@ -23,7 +23,7 @@ export class NewHome extends React.Component{
         const tempData = {...this.state.data}
         let newData = []
         tempData.rows.map((item)=>{
-            if ((item.office.includes(location)) && (item.position.includes(postion))){
+            if ((item.company.includes(location)) && (item.position.includes(postion))){
                 return(newData.push(item))
             }
         })
@@ -42,20 +42,27 @@ export class NewHome extends React.Component{
             <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                        <select className={styles.selectTag} ref={this.locationRef} >
-                            <option value={""}>By Location</option>
-                            <option value={"Edinburgh"}>Edinburgh</option>
-                            <option value={"Tokyo"}>Tokyo</option>
-                            <option value={"San Francisco"}>San Francisco</option>
-                        </select>
+
+                        <select className={styles.selectTag} ref={this.positionRef}>
+                                <option value={""}>By Position</option>
+                                <option value={"Software Engineer Intern"}>Software Engineer Intern	</option>
+                                <option value={"Technical Consulting Intern"}>Technical Consulting Intern</option>
+                                <option value={"Data Science Intern"}>Data Science Intern</option>
+                                <option value={"Financial Analyst Intern"}>Financial Analyst Intern</option>
+                                <option value={"Product Manager Intern"}>Product Manager Intern</option>
+                            </select>
+
+                        
                         </div>
                         <div className="col-md-3">
-                            <select className={styles.selectTag} ref={this.positionRef}>
-                                <option value={""}>By Position</option>
-                                <option value={"System Architect"}>System Architect</option>
-                                <option value={"Accountant"}>Accountant</option>
-                                <option value={"Junior Technical Author"}>Junior Technical Author</option>
-
+                            <select className={styles.selectTag} ref={this.locationRef} >
+                                <option value={""}>By Company</option>
+                                <option value={"Google"}>Google</option>
+                                <option value={"TD Bank"}>TD Bank</option>
+                                <option value={"RBC"}>RBC</option>
+                                <option value={"Shopify"}>Shopify</option>
+                                <option value={"Microsoft"}>Microsoft</option>
+                                <option value={"Quuens University"}>Quuens University</option>
                             </select>
                         </div>
                         <div className="col-md-3">
@@ -71,10 +78,10 @@ export class NewHome extends React.Component{
                     </div>
                 </div>
 
-            <div style={{width:"50%", margin:"0 auto"}}>
+            <div style={{width:"100%", margin:"0 auto"}}>
                 <div className="container">            
                     <div className="row">
-                        <div className="cold-md-12">
+                        <div className="col-md-12">
                         <MDBDataTable
                             striped
                             bordered

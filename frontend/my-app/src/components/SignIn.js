@@ -51,6 +51,7 @@ const handleLogin = () => {
     const password = document.getElementById("password").value
     console.log(email + " " + password)
     if(password === "12345"){
+        alert("Welcome "+ email)
         window.location.href = "/home"
     }
     else{
