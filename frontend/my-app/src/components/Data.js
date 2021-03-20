@@ -1,11 +1,6 @@
-// https://mdbootstrap.com/docs/react/tables/datatables/
-
-import React from 'react';
-import { MDBDataTableV5 } from 'mdbreact';
-
-export default function Home() {
-  const [datatable, setDatatable] = React.useState({
-    columns: [
+export const data = 
+{    
+  columns: [
       {
         label: 'Name',
         field: 'name',
@@ -21,7 +16,7 @@ export default function Home() {
         width: 270,
       },
       {
-        label: 'Office',
+        label: 'Location',
         field: 'office',
         width: 200,
       },
@@ -34,13 +29,13 @@ export default function Home() {
       {
         label: 'Start date',
         field: 'date',
-        sort: 'disabled',
+        sort: 'asc',
         width: 150,
       },
       {
         label: 'Salary',
         field: 'salary',
-        sort: 'disabled',
+        sort: 'asc',
         width: 100,
       },
     ],
@@ -502,18 +497,4 @@ export default function Home() {
         salary: '$112',
       },
     ],
-  });
-
-  return (
-    <MDBDataTableV5
-      hover
-      entriesOptions={[10, 25, 50]}
-      entries={10}
-      pagesAmount={4}
-      data={datatable}
-      pagingTop
-      searchTop
-      searchBottom={false}
-    />
-  );
-}
+  }

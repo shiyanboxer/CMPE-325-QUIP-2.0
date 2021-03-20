@@ -1,17 +1,18 @@
-import logo from './logo.svg';
-import './style/App.css';
 import React from "react"
-// import axios from "axios";
-import Home from "./components/Home";
+import { NewHome } from './components/NewHome';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+import './style/App.css';
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
-          <Home />
-        </div>       
-      </header>
+      <div>
+        {/* <Navbar/> */}
+        <NewHome></NewHome>
+      </div>
     </div>
   );
 }
