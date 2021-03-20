@@ -38,7 +38,7 @@ export class NewHome extends React.Component{
     }
     render() {
         return (
-            <React.Fragment>
+            <div style={{marginTop:"10px"}}>
             <div className="container">
                     <div className="row">
                         <div className="col-md-3">
@@ -85,7 +85,7 @@ export class NewHome extends React.Component{
                     </div>
                 </div>
             </div>                   
-        </React.Fragment>
+        </div>
             
           );
     }

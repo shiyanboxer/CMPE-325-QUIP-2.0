@@ -4,16 +4,21 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import './style/App.css';
-import Navbar from "./components/Navbar";
+import PrimarySearchAppBar from "./components/Navbar";
+import {BrowserRouter} from "react-router-dom";
+import Routes from "./Routes";
+
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        {/* <Navbar/> */}
-        <NewHome></NewHome>
+    <BrowserRouter>
+      <div className="App">
+        <div>
+          <PrimarySearchAppBar></PrimarySearchAppBar>
+          <Routes></Routes>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
