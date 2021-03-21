@@ -50,16 +50,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const handleLogin = () => {
+const handleLogin = (props) => {
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value
     console.log(email + " " + password)
     if(password === "12345"){
-        window.location.href = "/home"
+      props.history.push('/home')
     }
 }
 
-export default function SignIn() {
+export default function SignIn(props) {
   const classes = useStyles();
 
   return (
@@ -102,7 +102,7 @@ export default function SignIn() {
             </RadioGroup>
           </FormControl>
           <Button
-            onClick={()=>handleLogin()}
+            onClick={()=>handleLogin(props)}
             fullWidth
             variant="contained"
             color="primary"
