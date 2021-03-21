@@ -15,7 +15,7 @@ export class Profile extends React.Component{
                                 <div className="mt-3">
                                     <h4>Shiyan Boxer</h4>
                                     <p className="text-secondary mb-1">3rd Year Computer Engineering Student</p>
-                                    <p className="text-muted font-size-sm">Ontario, CA</p>
+                                    {/* <p className="text-muted font-size-sm">Ontario, CA</p> */}
                                     {/* <button className="btn btn-primary">Follow</button>
                                     <button className="btn btn-success">Message</button> */}
                                 </div>
@@ -26,6 +26,7 @@ export class Profile extends React.Component{
                         </div>
                         </div>
                         <div className="col-md-8">
+
                         <div className="card mb-3">
                             <div className="card-body">
                             <div className="row">
@@ -39,40 +40,62 @@ export class Profile extends React.Component{
                             <hr/>
                             <div className="row">
                                 <div className="col-sm-3">
+                                <h6 className="mb-0">Program</h6>
+                                </div>
+                                <div className="col-sm-9 text-secondary">
+                                3rd Year Computer Engineering
+                                </div>
+                            </div>
+                        
+                            <hr/>
+                            <div className="row">
+                                <div className="col-sm-3">
                                 <h6 className="mb-0">Email</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                shiyan.boxer@gmail.com
+                                shiyan@gmail.com
                                 </div>
                             </div>
                             <hr/>
                             <div className="row">
                                 <div className="col-sm-3">
-                                <h6 className="mb-0">Mobile</h6>
+                                <h6 className="mb-0">Phone</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                (320) 380-4539
+                                (123) 456-7890
                                 </div>
                             </div>
                             <hr/>
                             <div className="row">
                                 <div className="col-sm-3">
-                                <h6 className="mb-0">Address</h6>
+                                <h6 className="mb-0">Location</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                    Ontario, CA
+                                    Kingston, ON
                                 </div>
                             </div>
                             <hr/>
                             <div className="row">
                                 <div className="col-sm-3">
-                                <h6 className="mb-0">Github</h6>
+                                <h6 className="mb-0">Social Links</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                    <a href="https://github.com/shiyanboxer">shiyanboxer</a>
+                                    <a href="https://github.com/shiyanboxer">GitHub</a>
+                                    <p></p>
+                                    <a href="https://www.linkedin.com/in/shiyanboxer/">LinkedIn</a>
+                                    <p></p>
+                                    <a href="https://shiyanboxer.netlify.app/">Personal Website</a>
                                 </div>
                             </div>
-
+                            <hr/>
+                            <div className="row">
+                                <div className="col-sm-3">
+                                <h6 className="mb-0">Bio</h6>
+                                </div>
+                                <div className="col-sm-9 text-secondary">
+                                    Hi, my name is Shiyan. 
+                                </div>
+                            </div>
 
                             </div>
                         </div>
@@ -80,7 +103,7 @@ export class Profile extends React.Component{
                             <div className="col-sm-6 mb-3">
                             <div className="card h-100">
                                 <div className="card-body">
-                                <h6 className="d-flex align-items-center mb-3"><i className="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                                <h6 className="d-flex align-items-center mb-3"><i className="material-icons text-info mr-3"></i>Skills</h6>
                                 <small>Web Design</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
                                     <div className="progress-bar bg-primary" role="progressbar" style={{width: "80%"}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
@@ -107,7 +130,7 @@ export class Profile extends React.Component{
                             <div className="col-sm-6 mb-3">
                             <div className="card h-100">
                                 <div className="card-body">
-                                <h6 className="d-flex align-items-center mb-3"><i className="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                                <h6 className="d-flex align-items-center mb-3"><i className="material-icons text-info mr-2"></i>Project Status</h6>
                                 <small>Web Design</small>
                                 <div className="progress mb-3"style={{height: "5px"}}>
                                     <div className="progress-bar bg-primary" role="progressbar" style={{width: "80%"}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
