@@ -14,19 +14,38 @@ export class Profile extends React.Component{
                                 <img src= {window.location.origin +"/Profilepic.png"} alt="Admin" className="rounded-circle" width="250"/>
                                 <div className="mt-3">
                                     <h4>Shiyan Boxer</h4>
-                                    <p className="text-secondary mb-1">3rd Year Computer Engineering Student</p>
-                                    {/* <p className="text-muted font-size-sm">Ontario, CA</p> */}
-                                    {/* <button className="btn btn-primary">Follow</button>
-                                    <button className="btn btn-success">Message</button> */}
+                                    <p className="text-secondary mb-1">3rd-year Computer Engineering Student</p>
+                                    <p className="text-muted font-size-sm">Ontario, CA</p>
+                                    <button className="btn btn-primary">Resume</button> 
+                                    <button className="btn btn-primary">Cover Letter</button>
+
                                 </div>
                             </div>
+
                             </div>
+
                         </div>
+                        
                         <div className="card mt-3">
                         </div>
+                        <div className="card mb-3">
+                            <div className="card-body">
+                            <div className="row">
+                                {/* <div className="col-sm-3">
+                                <h6 className="mb-0">Bio</h6>
+                                </div> */}
+                                <div className="col-sm-12 text-secondary">
+                                Hi, my name is Shiyan. I'm a 3rd year computer engineering student. I'm seeking an internship in the clean energy where I can utilize my backend development skills.  
+                                </div>
+                            
+                            </div>
+                            </div>
+                        </div>
+
                         </div>
                         <div className="col-md-8">
 
+                        
                         <div className="card mb-3">
                             <div className="card-body">
                             <div className="row">
@@ -43,10 +62,21 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Program</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                3rd Year Computer Engineering
+                                B.A.Sc Computer Engineering
                                 </div>
                             </div>
                         
+                            <hr/>
+                            <div className="row">
+                                <div className="col-sm-3">
+                                <h6 className="mb-0">Year</h6>
+                                </div>
+                                <div className="col-sm-9 text-secondary">
+                                3rd Year
+                                </div>
+                            </div>
+                        
+
                             <hr/>
                             <div className="row">
                                 <div className="col-sm-3">
@@ -87,48 +117,43 @@ export class Profile extends React.Component{
                                     <a href="https://shiyanboxer.netlify.app/">Personal Website</a>
                                 </div>
                             </div>
-                            <hr/>
-                            <div className="row">
-                                <div className="col-sm-3">
-                                <h6 className="mb-0">Bio</h6>
-                                </div>
-                                <div className="col-sm-9 text-secondary">
-                                    Hi, my name is Shiyan. 
-                                </div>
-                            </div>
-
                             </div>
                         </div>
+
+                        
+
                         <div className="row gutters-sm">
-                            <div className="col-sm-6 mb-3">
+                            <div className="col-sm-12 mb-3">
                             <div className="card h-100">
                                 <div className="card-body">
                                 <h6 className="d-flex align-items-center mb-3"><i className="material-icons text-info mr-3"></i>Skills</h6>
-                                <small>Web Design</small>
+                                <small>JavaScript</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
                                     <div className="progress-bar bg-primary" role="progressbar" style={{width: "80%"}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <small>Website Markup</small>
+                                <small>ReactJS</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
                                     <div className="progress-bar bg-primary" role="progressbar" style={{width: "72%"}} aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <small>One Page</small>
+                                <small>MongoDB</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
                                     <div className="progress-bar bg-primary" role="progressbar" style={{width: "89%"}} aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <small>Mobile Template</small>
+                                <small>Python</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
                                     <div className="progress-bar bg-primary" role="progressbar" style={{width: "55%"}} aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <small>Backend API</small>
+                                <small>Flask</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
                                     <div className="progress-bar bg-primary" role="progressbar" style={{width: "66%"}} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 </div>
                             </div>
                             </div>
+
+
                             <div className="col-sm-6 mb-3">
-                            <div className="card h-100">
+                            {/* <div className="card h-100">
                                 <div className="card-body">
                                 <h6 className="d-flex align-items-center mb-3"><i className="material-icons text-info mr-2"></i>Project Status</h6>
                                 <small>Web Design</small>
@@ -152,7 +177,8 @@ export class Profile extends React.Component{
                                     <div classNameName="progress-bar bg-primary" role="progressbar" style={{width: "66%"}} aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 </div>
-                            </div>
+                            </div> */}
+                            
                             </div>
                         </div>
                         </div>
