@@ -176,7 +176,7 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton> */}
           <Typography className={classes.title} variant="h6" noWrap>
-           <Link to="/home" style={{textDecoration:"None",color:"white"}}>Job search Application</Link>
+           <Link to="/home" style={{textDecoration:"None",color:"white"}}>QUIP 2.0</Link>
           </Typography>
           {/* <div className={classes.search}>
             <div className={classes.searchIcon}>

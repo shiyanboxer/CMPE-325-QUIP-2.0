@@ -46,7 +46,6 @@ export const data =
       field: 'remote',
       width: 100,
     },
-
     ],
     rows: [
       {
@@ -57,7 +56,7 @@ export const data =
         salary: '67000',
         length: '12 month',
         skills: 'JavaScript, NodeJS, Python, Flask',
-        remote: 'Remote',
+        remote: 'Remote'
       },
       {
         position: 'Technical Consulting Intern',
