@@ -15,7 +15,7 @@ export class Profile extends React.Component{
                                 <div className="mt-3">
                                     <h4>Shiyan Boxer</h4>
                                     <p className="text-secondary mb-1">3rd-year Computer Engineering Student</p>
-                                    <p className="text-muted font-size-sm">Ontario, CA</p>
+                                    <p className="text-muted font-size-sm"></p>
                                     <button className="btn btn-primary">Resume</button> 
                                     <button className="btn btn-primary">Cover Letter</button>
 
@@ -35,7 +35,7 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Bio</h6>
                                 </div> */}
                                 <div className="col-sm-12 text-secondary">
-                                Hi, my name is Shiyan. I'm a 3rd year computer engineering student. I'm seeking an internship in the clean energy where I can utilize my backend development skills.  
+                                Hi, my name is Shiyan. I'm a 3rd year computer engineering student. I'm seeking an internship in the clean energy industry where I can utilize my backend development skills.  
                                 </div>
                             
                             </div>

@@ -42,7 +42,7 @@ export const data =
       width: 300,
     },
     {
-      label: 'Remote',
+      label: 'Office',
       field: 'remote',
       width: 100,
     },

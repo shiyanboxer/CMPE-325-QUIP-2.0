@@ -15,6 +15,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { Link } from 'react-router-dom';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -175,7 +176,7 @@ export default function PrimarySearchAppBar() {
           >
             <MenuIcon />
           </IconButton> */}
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={classes.title} variant="h4" noWrap>
            <Link to="/home" style={{textDecoration:"None",color:"white"}}>QUIP 2.0</Link>
           </Typography>
           {/* <div className={classes.search}>
@@ -191,18 +192,27 @@ export default function PrimarySearchAppBar() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </div> */}
+
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+          <IconButton aria-label="show 17 new notifications" color="inherit">
+              <Badge badgeContent={0} color="secondary">
+                <CalendarTodayIcon />
+              </Badge>
+            </IconButton>
+
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={0} color="secondary">
                 <MailIcon />
               </Badge>
             </IconButton>
+
             <IconButton aria-label="show 17 new notifications" color="inherit">
               <Badge badgeContent={0} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
+
             <IconButton
               edge="end"
               aria-label="account of current user"
