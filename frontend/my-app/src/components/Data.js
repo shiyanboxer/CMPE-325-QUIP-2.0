@@ -46,6 +46,11 @@ export const data =
       field: 'remote',
       width: 100,
     },
+    {
+      label: 'Status',
+      field: 'status',
+      width: 100,
+    },
     ],
     rows: [
       {
@@ -56,7 +61,8 @@ export const data =
         salary: '$67,000',
         length: '12 month',
         skills: 'JavaScript, NodeJS, Python, Flask',
-        remote: 'Remote'
+        remote: 'Remote',
+        status: 'Applied', 
       },
       {
         position: 'Technical Consulting Intern',
@@ -67,6 +73,7 @@ export const data =
         length: '12 month',
         skills: 'JavaScript, Python, Power Point',
         remote: 'Remote',
+        status: 'Applied', 
       }, 
       {
         position: 'Software Engineer Intern',
@@ -77,6 +84,7 @@ export const data =
         length: '12 month',
         skills: 'Python, Flask, Docker',
         remote: 'In-Office',
+        status: 'Interviewed', 
       }, 
       {
         position: 'Data Science Intern',
@@ -87,6 +95,7 @@ export const data =
         length: '8 month',
         skills: 'Python, R, NumPy',
         remote: 'In-Office',
+        status: 'Declined', 
       }, 
       {
         position: 'Software Engineer Intern',
@@ -97,6 +106,7 @@ export const data =
         length: '8 month',
         skills: 'Docker, Git, Kubernetes',
         remote: 'Remote',
+        status: 'Offered', 
       }, 
       {
         position: 'Data Science Intern',
@@ -107,6 +117,7 @@ export const data =
         length: '12 month',
         skills: 'Python, R, NumPy',
         remote: 'Remote',
+        status: 'Declined', 
       }, 
       {
         position: 'Financial Analyst Intern',
@@ -117,6 +128,7 @@ export const data =
         length: '12 month',
         skills: 'Power Point, Excel, Python',
         remote: 'In-Office',
+        status: 'Interviewed', 
       }, 
       {
         position: 'Sofware Engineer Intern',
@@ -127,6 +139,7 @@ export const data =
         length: '12 month',
         skills: 'Python, MongoDB, JavaScript',
         remote: 'In-Office',
+        status: 'Offered',
       }, 
       {
         position: 'Research Intern',
@@ -137,6 +150,7 @@ export const data =
         length: '12 month',
         skills: 'Power Point, Excel',
         remote: 'In-Office',
+        status: 'Not Applied',
       }, 
       {
         position: 'Product Manager Intern',
@@ -147,6 +161,7 @@ export const data =
         length: '8 month',
         skills: 'Docker, Git, Kubernetes',
         remote: 'Remote',
+        status: 'Not Applied',
       },
       {
         position: 'Product Manager Intern',
@@ -157,6 +172,7 @@ export const data =
         length: '8 month',
         skills: 'Jira, Excel, Flask, JavaScript',
         remote: 'Remote',
+        status: 'Not Applied',
       },  
       {
         position: 'Product Manager Intern',
@@ -167,6 +183,7 @@ export const data =
         length: '12 month',
         skills: 'Jira, Excel, Flask, JavaScript',
         remote: 'Remote',
+        status: 'Not Applied',
       },  
       {
         position: 'Software Engineer Intern',
@@ -177,6 +194,7 @@ export const data =
         length: '12 month',
         skills: 'Python, Excel, Flask, JavaScript',
         remote: 'Toronto, ON',
+        status: 'Not Applied',
       },
       {
         position: 'Data Analyst Intern',
@@ -187,6 +205,7 @@ export const data =
         length: '12 month',
         skills: 'Python, Excel, Flask, JavaScript',
         remote: 'Toronto, ON',
+        status: 'Offered',
       },
     ],
   }
