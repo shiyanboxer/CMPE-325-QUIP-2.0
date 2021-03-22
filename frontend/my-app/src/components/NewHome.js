@@ -44,14 +44,14 @@ export class NewHome extends React.Component{
     }
     render() {
         return (
-            <div style={{marginTop:"10px"}}>
+            <div style={{marginTop:"50px"}}>
             <div className="container">
                     <div className="row">
                         <div className="col-md-2">
 
                         <select className={styles.selectTag} ref={this.positionRef}>
                                 <option value={""}>By Position</option>
-                                <option value={"Software Engineer Intern"}>Software Engineer	</option>
+                                <option value={"Software Engineer Intern"}>Software Engineer</option>
                                 <option value={"Technical Consulting Intern"}>Technical Consulting</option>
                                 <option value={"Data Science Intern"}>Data Science</option>
                                 <option value={"Financial Analyst Intern"}>Financial Analyst</option>
@@ -68,7 +68,8 @@ export class NewHome extends React.Component{
                                 <option value={"RBC"}>RBC</option>
                                 <option value={"Shopify"}>Shopify</option>
                                 <option value={"Microsoft"}>Microsoft</option>
-                                <option value={"Quuens University"}>Quuens University</option>
+                                <option value={"Queens University"}>Queens University</option>
+                                <option value={"ecobee"}>ecobee</option>
                             </select>
                         </div>
 
@@ -90,6 +91,8 @@ export class NewHome extends React.Component{
                                 <option value={"Flask"}>Flask</option>
                                 <option value={"JavaScript"}>JavaScript</option>
                                 <option value={"Docker"}>Docker</option>
+                                <option value={"R"}>R</option>
+                                <option value={"Excel"}>Excel</option>
                             </select>
                         </div>
 

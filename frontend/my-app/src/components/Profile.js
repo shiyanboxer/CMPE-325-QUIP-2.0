@@ -3,6 +3,7 @@ import React from "react"
 export class Profile extends React.Component{
     render() {
         return (
+            <div style={{marginTop:"40px"}}>
             <div className="container">
                 <div className="main-body">
                     <br/>
@@ -184,6 +185,7 @@ export class Profile extends React.Component{
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
