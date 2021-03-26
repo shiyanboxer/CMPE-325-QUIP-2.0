@@ -1,8 +1,17 @@
 import React from "react"
+import PrimarySearchAppBar from "./Navbar";
+import EditIcon from '@material-ui/icons/Edit';
 
 export class Profile extends React.Component{
     render() {
         return (
+            <div>
+                <div className="container-fluid">
+                    <div className="row">
+                    <PrimarySearchAppBar/>
+                    </div>
+
+                </div>
             <div style={{marginTop:"40px"}}>
             <div className="container">
                 <div className="main-body">
@@ -14,8 +23,8 @@ export class Profile extends React.Component{
                             <div className="d-flex flex-column align-items-center text-center">
                                 <img src= {window.location.origin +"/Profilepic.png"} alt="Admin" className="rounded-circle" width="250"/>
                                 <div className="mt-3">
-                                    <h4>Shiyan Boxer</h4>
-                                    <p className="text-secondary mb-1">3rd-year Computer Engineering Student</p>
+                                <h4 contenteditable="true">Shiyan Boxer</h4>
+                                    <div className="text-secondary mb-1 " contentEditable="true">3rd-year Computer Engineering Student</div>
                                     <p className="text-muted font-size-sm"></p>
                                     <button className="btn btn-primary">Resume</button> 
                                     <button className="btn btn-primary">Cover Letter</button>
@@ -35,7 +44,7 @@ export class Profile extends React.Component{
                                 {/* <div className="col-sm-3">
                                 <h6 className="mb-0">Bio</h6>
                                 </div> */}
-                                <div className="col-sm-12 text-secondary">
+                                <div className="col-sm-12 text-secondary" contenteditable ="true">
                                 Hi, my name is Shiyan. I'm a 3rd year computer engineering student. I'm seeking an internship in the clean energy industry where I can utilize my backend development skills.  
                                 </div>
                             
@@ -54,7 +63,7 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Full Name</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                Shiyan Boxer
+                                <div contenteditable="true">Shiyan Boxer</div>
                                 </div>
                             </div>
                             <hr/>
@@ -63,7 +72,7 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Program</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                B.A.Sc Computer Engineering
+                                <div contenteditable="true">B.A.Sc Computer Engineering</div>
                                 </div>
                             </div>
                         
@@ -73,7 +82,8 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Year</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                3rd Year
+                                <div contenteditable="true">3rd Year</div>
+                               
                                 </div>
                             </div>
                         
@@ -84,7 +94,8 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Email</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                shiyan@gmail.com
+                                <div contenteditable="true">shiyan@gmail.com</div>
+                                
                                 </div>
                             </div>
                             <hr/>
@@ -93,7 +104,8 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Phone</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                (123) 456-7890
+                                <div contenteditable="true">(123) 456-7890</div>
+                                
                                 </div>
                             </div>
                             <hr/>
@@ -102,7 +114,8 @@ export class Profile extends React.Component{
                                 <h6 className="mb-0">Location</h6>
                                 </div>
                                 <div className="col-sm-9 text-secondary">
-                                    Kingston, ON
+                                    
+                                    <div contenteditable="true">Kingston, ON</div>
                                 </div>
                             </div>
                             <hr/>
@@ -110,7 +123,7 @@ export class Profile extends React.Component{
                                 <div className="col-sm-3">
                                 <h6 className="mb-0">Social Links</h6>
                                 </div>
-                                <div className="col-sm-9 text-secondary">
+                                <div className="col-sm-9 text-secondary" contentEditable="true">
                                     <a href="https://github.com/shiyanboxer">GitHub</a>
                                     <p></p>
                                     <a href="https://www.linkedin.com/in/shiyanboxer/">LinkedIn</a>
@@ -138,7 +151,7 @@ export class Profile extends React.Component{
                                 </div>
                                 <small>MongoDB</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
-                                    <div className="progress-bar bg-primary" role="progressbar" style={{width: "89%"}} aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div  className="progress-bar bg-primary" role="progressbar" style={{width: "89%"}} aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <small>Python</small>
                                 <div className="progress mb-3" style={{height: "5px"}}>
@@ -151,7 +164,12 @@ export class Profile extends React.Component{
                                 </div>
                             </div>
                             </div>
-
+{/* 
+                            <div className ="row">
+                            <div className="col-sm-12 mb-3">
+                                <EditIcon />
+                            </div>
+                            </div> */}
 
                             <div className="col-sm-6 mb-3">
                             {/* <div className="card h-100">
@@ -185,6 +203,7 @@ export class Profile extends React.Component{
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             </div>
         );

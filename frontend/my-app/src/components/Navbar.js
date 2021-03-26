@@ -21,6 +21,7 @@ import WorkIcon from '@material-ui/icons/Work';
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
+    height: '100px'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -120,6 +121,7 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <Link to="/profile"><MenuItem>Profile</MenuItem></Link>
+      <Link to="/home"><MenuItem>Job Board</MenuItem></Link>
       <Link to="/"><MenuItem>Logout</MenuItem></Link>
     </Menu>
   );

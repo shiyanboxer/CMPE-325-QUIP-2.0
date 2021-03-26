@@ -16,6 +16,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Radio } from '@material-ui/core';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 
 function Copyright() {
   return (
@@ -31,6 +33,10 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  grow: {
+    flexGrow: 1,
+    height: '100px'
+  },
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
@@ -63,6 +69,41 @@ export default function SignIn(props) {
   const classes = useStyles();
 
   return (
+    <div>
+
+<div className={classes.grow}>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography className={classes.title} variant="h4" noWrap>
+           <Link to="/home" style={{textDecoration:"None",color:"white"}}>QUIP 2.0</Link>
+          </Typography>
+          <div className={classes.grow} />
+          <div className={classes.sectionDesktop}>  
+          </div>
+        </Toolbar>
+      </AppBar>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -107,6 +148,7 @@ export default function SignIn(props) {
             variant="contained"
             color="primary"
             className={classes.submit}
+            style = {{height: '55px'}}
           >
             Sign In
           </Button>
@@ -126,5 +168,6 @@ export default function SignIn(props) {
       </div>
       
     </Container>
+    </div>
   );
 }

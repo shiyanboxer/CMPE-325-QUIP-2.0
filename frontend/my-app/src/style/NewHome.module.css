@@ -2,3 +2,8 @@
     margin-top: 10px;
 }
 
+.noPadding{
+    padding: 0;
+    margin: 0;
+}
+

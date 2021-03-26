@@ -2,6 +2,7 @@ import React from "react"
 import {data} from "./Data"
 import { MDBDataTable } from 'mdbreact';
 import styles from "../style/NewHome.module.css"
+import PrimarySearchAppBar from "./Navbar";
 
 
 export class NewHome extends React.Component{
@@ -44,6 +45,16 @@ export class NewHome extends React.Component{
     }
     render() {
         return (
+
+            <div className={styles.noPadding}>
+                <div  className="container-fluid">
+                    <div className="row">
+                    <PrimarySearchAppBar/>
+                    </div>
+                </div>
+
+        
+
             <div style={{marginTop:"50px"}}>
             <div className="container">
                     <div className="row">
@@ -123,6 +134,7 @@ export class NewHome extends React.Component{
                     </div>
                 </div>
             </div>                   
+        </div>
         </div>
             
           );
